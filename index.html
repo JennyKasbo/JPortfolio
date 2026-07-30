@@ -117,7 +117,7 @@
       }
       .grid-container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
         gap: 25px;
         padding: 0 10%;
       }
@@ -194,21 +194,25 @@
         color: var(--accent-color);
         margin-right: 10px;
       }
-      .r-button{
-         transform: translateX(-50%); 
+      .r-button {
         display: inline-block;
         color: var(--accent-color);
         text-decoration: none;
         font-weight: 700;
         border: 2px solid var(--accent-color);
-        padding: 8px 20px;
-        border-radius: 50px;
-        transition: 0.3s;
         padding: 15px 40px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
         font-size: 1.1rem;
         margin-top: 30px;
-        margin-left: 100px;
         box-shadow: 0 10px 10px rgba(189, 139, 22, 0.2);
+        text-align: center;
+      }
+      .r-button:hover {
+        background: var(--accent-color);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 15px 25px rgba(189, 139, 22, 0.35);
       }
 
       .cta-button {
@@ -282,7 +286,7 @@
 
     <section class="hero">
       <div class="profile-area" data-aos="fade-right">
-        <img src="images/img1.jpg" alt="Jenny Kaspo" class="profile-img" />
+        <img src="images/image.jpg" alt="Jenny Kasbo" class="profile-img" />
       </div>
       <div class="hero-content" data-aos="fade-left">
         <h1>Hi, I'm <span>Jenny</span></h1>
@@ -296,14 +300,12 @@
           Software Engineer | Frontend Specialist
         </p>
         <ul class="quick-contact">
-
-            <ul class="quick-contact">
-              <li><a href="mailto:jenny.kaspo@example.com"><i class="fas fa-envelope"></i> jennykasbo@gmail.com</a></li>
+          <li><a href="mailto:jennykasbo@gmail.com"><i class="fas fa-envelope"></i> jennykasbo@gmail.com</a></li>
                 <li><a href="tel:+96300000000"><i class="fas fa-phone"></i> +963 938585684</a></li>
-                <li><a href="https://github.com/jenny-kaspo" target="_blank"><i class="fab fa-github"></i> github.com/jenny-kaspo</a></li>
+                <li><a href="https://github.com/JennyKasbo" target="_blank"><i class="fab fa-github"></i> github.com/JennyKasbo</a></li>
         </ul>
          <a
-          href="https://drive.google.com/file/d/1u91xc8S6sfIWgpyLNGP2vALxxLxs953T/view?usp=sharing"
+          href="https://drive.google.com/file/d/1FkIkhKJx5gamaNIrfMRWFIEGRML4Uem5/view?usp=sharing"
           class="r-button"
         >
          View Resume
@@ -350,13 +352,17 @@
     <div class="grid-container">
       <div class="card" data-aos="zoom-in">
         <i class="fab fa-react" style="color:  #3eaee2"></i>
-        <h3>React</h3>
+        <h3>React.js</h3>
       </div>
-      <!-- <div class="card" data-aos="zoom-in">
-        <i class="fab fa-angular" style="color: #dd0031"></i>
-        <h3>Angular</h3>
-      </div> -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="50">
+        <i class="fas fa-cubes" style="color: #ffffff"></i>
+        <h3>Next.js</h3>
+      </div>
       <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-file-code" style="color: #3178c6"></i>
+        <h3>TypeScript</h3>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="150">
         <i class="fab fa-js-square" style="color: #f7df1e"></i>
         <h3>JavaScript ES6</h3>
       </div>
@@ -364,10 +370,11 @@
         <i class="fab fa-html5" style="color: #e34c26"></i>
         <h3>HTML5 / CSS3</h3>
       </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+      <div class="card" data-aos="zoom-in" data-aos-delay="250">
         <i class="fas fa-code-branch" style="color: #dd0031"></i>
         <h3>Git & Control</h3>
       </div>
+       
     </div>
 
     <h2 class="section-title">Professional Skills</h2>
@@ -384,28 +391,17 @@
         <i class="fas fa-comments"></i>
         <h3>Communication</h3>
       </div>
+     
     </div>
 
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects-grid">
 
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/bank.jpg" alt="Bank" class="project-img">
-        <h3>Bank System</h3>
-        <p>Bank manger dashboard implemented many Design Patterns.</p>
-        <a
-          href="https://github.com/jenny-kaspo/Bank-System"
-          target="_blank"
-          class="github-link"
-          >View Repo</a
-          >
-      </div>
-
-      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
         <img src="images/saj.jpg" alt="sajelha" class="project-img">
             <h3>Sajelha Dashboard</h3>
-            <p>Complaintes Admin and Employees Governmental platform.</p>
-            <a href="https://github.com/jenny-kaspo/Sajelha-Dashboard" target="_blank" class="github-link">View Repo</a>
+            <p>Governmental platform for Citizens complaintes, with entity and employee management, complaint tracking and map location.</p>
+            <a href="https://github.com/JennyKasbo/Sajelha-Dashboard" target="_blank" class="github-link">View Repo</a>
         </div>
       
         
@@ -413,20 +409,42 @@
        <div class="project-card" data-aos="fade-up">
         <img src="images/res.jpg" alt="Restaurant" class="project-img">
         <h3>Napolitano Website</h3>
-        <p>Dynamic authentic italian restaurant website.</p>
+        <p>Dynamic authentic italian restaurant website with user friendly menu and online booking.</p>
         <a
-          href="https://jenny-kaspo.github.io/Napolitano-Website/"
+          href="https://JennyKasbo.github.io/Napolitano-Website/"
           target="_blank"
           class="github-link"
           >View Website</a
           >
       </div>
-
-         <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Khota Platform</h3>
-        <p>Admin panel for Khota volunteering platform.</p>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/bank.jpg" alt="Bank" class="project-img">
+        <h3>Bank System</h3>
+        <p>Bank manger dashboard covering account management, and transaction workflows, implemented many Design Patterns.</p>
         <a
-          href="https://github.com/jenny-kaspo/Khota-Dashboard"
+          href="https://github.com/JennyKasbo/Bank-System"
+          target="_blank"
+          class="github-link"
+          >View Repo</a
+          >
+      </div>
+      
+      <div class="project-card" data-aos="fade-up">
+        <h3>Eventita Hub</h3>
+        <p>Modern event management web app with including event creation, filtering, registrations, approvals, and audit logs.</p>
+        <a
+          href="https://github.com/JennyKasbo/Events-Management"
+          target="_blank"
+          class="github-link"
+          >View Repo</a
+        >
+      </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Khotwa Platform</h3>
+        <p>Dashboard for a nonprofit organization to manage volunteers, events, donations, tracking expenses, applications and tasks, with analytics visualized.</p>
+        <a
+          href="https://github.com/JennyKasbo/Khota-Dashboard"
           target="_blank"
           class="github-link"
           >View Repo</a
@@ -438,23 +456,23 @@
         <h3>Binary Game</h3>
         <p>Interactive logic training game with AI search algorithms like UCS, A* and Climbing Hill.</p>
         <a
-          href="https://github.com/jenny-kaspo/binarygame"
+          href="https://github.com/JennyKasbo/binarygame"
           target="_blank"
           class="github-link"
           >View Repo</a
           >
       </div>
 
-      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <!-- <div class="project-card" data-aos="fade-up" data-aos-delay="100">
         <h3>Angular Products</h3>
         <p>Dynamic product management app.</p>
         <a
-          href="https://github.com/jenny-kaspo/Angular-products-app"
+          href="https://github.com/JennyKasbo/Angular-products-app"
           target="_blank"
           class="github-link"
           >View Repo</a
         >
-      </div>
+      </div> -->
     </div>
 
     <footer>
@@ -464,7 +482,7 @@
           I'm currently available for internships and junior frontend roles.
         </p>
         <a
-          href="mailto:jenny.kaspo@example.com?subject=Portfolio%20Inquiry"
+          href="mailto:jennykasbo@gmail.com?subject=Portfolio%20Inquiry"
           class="cta-button"
         >
           <i class="fas fa-paper-plane"></i> Contact Me
